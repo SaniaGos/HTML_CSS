@@ -1,0 +1,118 @@
+@font-face {
+    font-family: My_Yaldevi;
+    src: url("../fonts/Yaldevi-ExtraLight.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.border {
+    border: 5px solid dodgerblue;
+    border-radius: 10px;
+}
+
+.content_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 5px solid #777;
+    width: 800px;
+    margin-top: 100px;
+}
+
+
+#header {
+    min-height: 150px;
+    background-color: burlywood;
+}
+
+
+.main {
+    min-height: 300px;
+    display: flex;
+    margin: 0;
+}
+
+.b {
+    flex-grow: 3;
+    background-color: burlywood;
+}
+
+.c {
+    flex-grow: 1;
+    background-color: burlywood;
+}
+
+#menu {
+    background-color: pink;
+    flex-grow: 1;
+}
+
+.posts {
+    display: flex;
+    flex-grow: 3;
+    flex-direction: column;
+    margin: 0;
+}
+
+.post {
+    background-color: dodgerblue;
+    flex-grow: 1;
+}
+
+#footer {
+    background-color: yellow;
+    min-height: 150px;
+}
+
+/* --------  2-2.png ---------- */
+.container_w {
+    min-width: 480px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#header_w {
+    min-height: 180px;
+    background-color: #293ce8;
+    margin: 0;
+}
+
+.col_w {
+    color: white;
+    font-family: My_Yaldevi;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.widgets {
+    min-height: 180px;
+    margin: 0;
+    display: flex;
+    column-gap: 10px;
+}
+
+.widget {
+    flex-grow: 1;
+    background-color: #112094;
+    margin: 0;
+    font-size: 16px;
+}
+
+#footer_w {
+    background-color: #293ce8;
+    min-height: 300px;
+    margin: 0;
+}
