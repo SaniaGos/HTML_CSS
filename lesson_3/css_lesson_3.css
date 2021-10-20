@@ -33,9 +33,10 @@
 
 #header {
     min-height: 150px;
+}
+.col_wood{
     background-color: burlywood;
 }
-
 
 .main {
     min-height: 300px;
@@ -45,12 +46,10 @@
 
 .b {
     flex-grow: 3;
-    background-color: burlywood;
 }
 
 .c {
     flex-grow: 1;
-    background-color: burlywood;
 }
 
 #menu {
@@ -71,8 +70,10 @@
 }
 
 #footer {
-    background-color: yellow;
     min-height: 150px;
+}
+.col_yellow{
+    background-color: yellow;
 }
 
 /* --------  2-2.png ---------- */
@@ -114,5 +115,29 @@
 #footer_w {
     background-color: #293ce8;
     min-height: 300px;
+    margin: 0;
+}
+
+/* --------  2.ipg ---------- */
+.nav{
+    height: 100px;
+    background-color: darkblue;
+}
+.bg_blue{
+    background-color: #293ce8;
+}
+.bg_light_blue{
+    background-color: lightskyblue;
+}
+.bg_dodgerblue{
+    background-color: dodgerblue;
+}
+.bg_mediumslateblue{
+    background-color: mediumslateblue;
+}
+.no_row_gap{
+    row-gap: 0;
+}
+.no_margin{
     margin: 0;
 }
