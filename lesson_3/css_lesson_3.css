@@ -82,6 +82,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    color: white;
 }
 
 #header_w {
@@ -91,7 +92,6 @@
 }
 
 .col_w {
-    color: white;
     font-family: My_Yaldevi;
     font-weight: normal;
     font-style: normal;
