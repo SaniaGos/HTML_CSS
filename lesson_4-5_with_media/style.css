@@ -335,7 +335,10 @@ body {
     width: 120px;
     border-radius: 17px;
     margin: auto 0 0 0;
+    cursor: pointer;
 }
+.notification__item button:hover span{ display: none;}
+.notification__item button:hover:before{ content: 'Click me';}
 
 .notification__item:nth-child(2n) {
     background-color: var(--blue);
