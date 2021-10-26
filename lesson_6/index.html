@@ -1,41 +1,92 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 <body>
 
 <div id="header">
-    <div class="header__top flex-center">
-        <div class="header__logo"><img src="image/LOGO.svg" alt="logo"></div>
-        <div class="header__menu flex-center">
-            <div class="header__menu-item"><a href="#">ГОЛОВНА</a></div>
-            <div class="header__menu-item"><a href="#">МЕНЮ</a></div>
-            <div class="header__menu-item"><a href="#">ПРО НАС</a></div>
-            <div class="header__menu-item"><a href="#">БРОНЮВАННЯ</a></div>
-            <div class="header__menu-item"><a href="#"><img src="image/cart.png" alt="cart"></a></div>
-            <div class="header__menu-item-phone flex-center">
-                <div class="phone flex-center">
-                    <div class="icon"><img src="image/phone.png" alt="phone"></div>
-                    <div class="number">+38-050-123-45-67</div>
-                </div>
-                <div class="description">Звяжіться з нами для бронювання</div>
-            </div>
-            <button>ЗАМОВЛЕННЯ СТОЛИКА</button>
+  <div class="header__top flex-center open-sans-normal">
+    <div class="header__logo"><img src="image/LOGO.svg" alt="logo"></div>
+    <div class="header__menu flex-center">
+      <div class="header__menu-item"><a href="#">ГОЛОВНА</a></div>
+      <div class="header__menu-item"><a href="#">МЕНЮ</a></div>
+      <div class="header__menu-item"><a href="#">ПРО НАС</a></div>
+      <div class="header__menu-item"><a href="#">БРОНЮВАННЯ</a></div>
+      <div class="header__menu-item"><a href="#"><img src="image/cart.png" alt="cart"></a></div>
+      <div class="header__menu-item-phone flex-center">
+        <div class="phone flex-center">
+          <div class="icon"><img src="image/phone.png" alt="phone"></div>
+          <div class="number">+38-050-123-45-67</div>
         </div>
+        <div class="description open-sans-normal">Звяжіться з нами для бронювання</div>
+      </div>
+      <button>ЗАМОВЛЕННЯ СТОЛИКА</button>
     </div>
+  </div>
 
-    <div class="header__center flex-center">
-        <h2>Ласкаво просимо в</h2>
-        <h1>Наш ресторан</h1>
-        <p>МІСЦЕ КРАЩОЇ ЇДИ</p>
-        <button>VIEW MENU</button>
+  <div class="header__center font-tns-normal flex-center">
+    <div class="header__center-text">
+      <h2>Ласкаво просимо в</h2>
+      <h1>Наш ресторан</h1>
+      <p class="open-sans-normal">МІСЦЕ КРАЩОЇ ЇДИ</p>
+      <button>VIEW MENU</button>
     </div>
+  </div>
+</div>
+<div id="benefits" class="flex-center">
+  <div class="benefits__item flex-center">
+    <img src="image/Mask_Group.png" alt="mask">
+    <p class="benefits__item-name font-tns-normal">Магічна<span> Атмосфера</span></p>
+    <p class="benefits__item-description font-tns-normal">У нашому закладі панує магічна атмосфера наповнена смачними ароматами</p>
+  </div>
+  <div class="benefits__item flex-center">
+    <img src="image/Mask_Group.png" alt="mask">
+    <p class="benefits__item-name font-tns-normal">Найкраща якість<span> Їжі</span></p>
+    <p class="benefits__item-description font-tns-normal">Якість нашої Їжі - чудова!</p>
+  </div>
+  <div class="benefits__item flex-center">
+    <img src="image/Mask_Group.png" alt="mask">
+    <p class="benefits__item-name font-tns-normal">Недорога<span> Їжа</span></p>
+    <p class="benefits__item-description font-tns-normal">Вартість нашої їжі залежить лише від її кількості. Якість завжди на
+      висоті!</p>
+  </div>
+
+</div>
+<div class="history flex-center">
+  <div class="history__description flex-center">
+    <div class="history__description-title font-tns-normal">Наша<span> Історія</span></div>
+    <div class="history__description-text open-sans-normal">Як і в будь-якого іншого самобутнього місця, ми маємо свою, особливу історію.
+      Ідея ресторану прийшла засновникам несподівано. Під час прогулянки лісом творець нашого ресторану застряг за сотні
+      кілометрів від найближчого населеного пункту. Вдалині від цивілізації і зв'язку їм довелося вчасно облаштувати
+      собі нехитрий побут, добувати і готувати собі їжу.
+    </div>
+    <div class="history__description-rating flex-center">
+      <div class="history__description-rating-item flex-center">
+        <div class="points open-sans-normal">93</div>
+        <div class="name open-sans-normal">Напої</div>
+      </div>
+      <div class="history__description-rating-item flex-center">
+        <div class="points open-sans-normal">206</div>
+        <div class="name open-sans-normal">Їда</div>
+      </div>
+      <div class="history__description-rating-item flex-center">
+        <div class="points open-sans-normal">71</div>
+        <div class="name open-sans-normal">Закуски</div>
+      </div>
+    </div>
+  </div>
+  <div class="history__photos">
+      <div class="history__photos-1"><img src="image/2331.png" alt="photo"></div>
+      <div class="history__photos-2"><img src="image/2551.jpg" alt="photo"></div>
+      <div class="history__photos-3"><img src="image/4301.jpg" alt="photo"></div>
+      <div class="history__photos-4"><img src="image/design_box.jpg" alt="photo"></div>
+  </div>
 </div>
 
 

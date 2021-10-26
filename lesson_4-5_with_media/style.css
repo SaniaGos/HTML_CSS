@@ -9,13 +9,16 @@
     margin: 0;
     padding: 0;
 }
-.bg-grey{
+
+.bg-grey {
     background-color: var(--grey);
 }
-.bg-blue{
+
+.bg-blue {
     background-color: var(--blue);
 }
-.bg-dark{
+
+.bg-dark {
     background-color: var(--dark);
 }
 
@@ -331,8 +334,14 @@ body {
     margin: auto 0 0 0;
     cursor: pointer;
 }
-.notification__item button:hover span{ display: none;}
-.notification__item button:hover:before{ content: 'Click me';}
+
+.notification__item button:hover span {
+    display: none;
+}
+
+.notification__item button:hover:before {
+    content: 'Click me';
+}
 
 .notification__item:nth-child(2n) {
     background-color: var(--blue);
