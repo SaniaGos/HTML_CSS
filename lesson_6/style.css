@@ -31,8 +31,9 @@ body {
 
 #header {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background: url("image/hero image.jpg") no-repeat center/cover;
@@ -61,12 +62,49 @@ body {
     color: white;
 }
 
-.header__menu-item img {
+.header__menu-item a img {
+    height: 20px;
 }
 
-.header__menu-item .description {
+.header__menu-item-phone {
+    flex-direction: column;
+    padding-left: 20px;
+    border-left: 2px solid white;
+}
+
+.header__menu-item-phone .description {
     font-family: 'OpenSans', sans-serif;
     font-weight: normal;
     text-align: center;
+    max-width: 120px;
 }
 
+.phone {
+    display: flex;
+    column-gap: 10px;
+    min-width: 190px;
+}
+
+.phone .number {
+    font-size: 18px;
+}
+
+button {
+    background-color: #FF7400;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header__menu button {
+    max-width: 150px;
+}
+
+.header__center {
+    color: white;
+    flex-direction: column;
+    margin: 200px;
+}
