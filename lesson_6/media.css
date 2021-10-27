@@ -110,10 +110,17 @@
 
 @media screen and (max-width: 500px) {
 
-    .header__menu-item:nth-child(-n + 5) {
+    .header__menu-item:nth-child(-n + 5),
+    .header__menu-item-phone,
+    .header__menu button{
         display: none;
     }
-    .header__menu-burger{
+
+    #header {
+        background-position-x: -500px;
+    }
+
+    .header__menu-burger {
         display: block;
     }
 
@@ -122,7 +129,12 @@
         margin-top: 25px;
         padding: 0 25px;
     }
-
+    .header__center{
+        margin-top: 150px;
+    }
+    .header__center button{
+        margin-top: 50px;
+    }
     .header__center h2 {
         font-size: 30px;
         line-height: normal;
@@ -132,7 +144,8 @@
         font-size: 45px;
         line-height: normal;
     }
-    #benefits{
+
+    #benefits {
         padding: 0 10px;
     }
 
