@@ -1,0 +1,20 @@
+.header__logo img {
+    display: inline-block;
+    background: transparent;
+    position: relative;
+}
+
+.header__logo img:nth-child(1) {
+    animation: shake 2.5s linear alternate infinite;
+}
+.header__logo img:nth-child(2) {
+    animation: shake-r 2.5s linear alternate infinite;
+    right: 34px;
+}
+
+@keyframes shake {
+    100% {transform: translateX(34px);}
+}
+@keyframes shake-r {
+    100% {transform: translateX(-34px);}
+}
