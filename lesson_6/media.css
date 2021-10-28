@@ -161,4 +161,8 @@
     .benefits__item > p {
         font-size: 18px;
     }
+    .history__description-rating{
+        flex-direction: column;
+        row-gap: 15px;
+    }
 }
