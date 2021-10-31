@@ -1,0 +1,215 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17px;
+    line-height: 32px;
+}
+
+body {
+    max-width: 1440px;
+}
+
+#header {
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 17px;
+    line-height: 20px;
+    color: #45494F;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    border: 2px solid #EAEDF5;
+    border-radius: 8px;
+    color: #2E75FF;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: unset;
+}
+
+h1 {
+    font-family: BBC Reith Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: -0.4px;
+    color: #1652AC;
+}
+
+.production__item:nth-child(1) .production__item_description p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #020303;
+}
+
+.production__item:nth-child(1) .production__item_description p::before,
+.production__item:nth-child(1) .production__item_description p::after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 40%;
+    height: 7px;
+    background-color: #EDEFF3;
+}
+
+.production__item:nth-child(1) .production__item_description p::before {
+    top: -30px;
+}
+
+.production__item:nth-child(1) .production__item_description p::after {
+    top: 30px;
+}
+
+h2 {
+    font-family: BBC Reith Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    color: #1652AC;
+}
+
+.production__item:nth-child(3) img {
+    padding: 0;
+}
+
+.production__item:nth-child(3) .production__item_description {
+    padding: 11%;
+    background: linear-gradient(180deg, #163DA2 0%, #003584 100%);
+    color: #FBFDFF;
+}
+
+.production__item:nth-child(3) .production__item_description h2 {
+    color: #FBFDFF;
+}
+
+.production__item-image {
+    min-height: 600px;
+}
+
+.production__item:nth-child(4) img {
+    min-width: 550px;
+    z-index: -1;
+}
+
+.production__item:nth-child(4) .production__item_description h2 {
+    color: #1652AC;
+    text-transform: uppercase;
+}
+
+.container {
+
+}
+
+.parameters-name {
+    font-family: BBC Reith Sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #020303;
+}
+
+.parameters-item {
+    width: 300px;
+}
+
+.parameters-item p {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #45494F;
+
+}
+
+.parameters__descriptions-text,
+.parameters__descriptions-text > b {
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -0.4px;
+    color: #45494F;
+    max-width: 550px;
+}
+
+.my__carousel {
+    max-width: 700px;
+}
+
+.my-button {
+    background: linear-gradient(180deg, #0C5CD6 0%, rgba(0, 56, 140, 0) 100%), #004FC7;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.21);
+    border-radius: 12px;
+    font-family: BBC Reith Sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #FAFBFE;
+    width: 395px;
+    height: 65px;
+}
+
+.footer__top-item h2 {
+    font-family: BBC Reith Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: -0.4px;
+    color: #1652AC;
+
+}
+
+.footer__top-item p {
+    color: #464C53;
+}
+
+.footer__top-item p span {
+    color: #293ce8;
+}
+
+.footer__top {
+    margin: 100px 15px 25px 15px;
+}
+
+.my-button-footer {
+    width: 300px;
+    max-width: 75%;
+    position: relative;
+}
+
+.my-button-footer::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("image/Arrow.png");
+    left: 0;
+    top: 22px;
+    height: 17px;
+    width: 80px;
+    z-index: 1000;
+}
+.footer__bottom{
+    color: #A3ADBA;
+}
+.footer__bottom div p span:nth-child(3){
+    color: black;
+}
+.footer__bottom div p span:nth-child(5){
+    color: #293ce8;
+}
+.footer__bottom a{
+    color: #A3ADBA;
+}
