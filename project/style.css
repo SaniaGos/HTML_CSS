@@ -1,0 +1,13 @@
+:root {
+    --blue: #005BB9;
+    --orange: #FFB800;
+    --dark: #0F2438;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17px;
+    line-height: 32px;
+}
