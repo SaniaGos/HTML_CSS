@@ -7,16 +7,101 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>AVT-ZAP</title>
   <link rel="stylesheet" href="fonts.css">
+  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="animation.css">
 </head>
 <body>
+<div id="header">
+  <div id="header__menu" class="container d-flex justify-content-between">
+    <div class="header__menu-left my-navbar">
+      <div class="d-flex align-items-center gap-1 ">
+        <img src="image/geolocation.png" alt="geolocation">
+        <p class="m-0 color-light">Ваше місто:</p>
+        <a style="text-decoration: underline" href="#">Вибрати</a>
+      </div>
+      <div class="my-dropdown">
+        <button class="drop-btn">Інформація <i class="arrow"></i></button>
+        <div class="my-dropdown-content">
+          <a href="#">Якась інфа</a>
+          <a href="#">Інша інфа</a>
+          <a href="#">Ще інша інфа</a>
+        </div>
+      </div>
+      <div class="my-dropdown">
+        <button class="drop-btn">Співробітництво <i class="arrow"></i></button>
+        <div class="my-dropdown-content">
+          <a href="#">Стати партнером</a>
+          <a href="#">Кур'єр</a>
+        </div>
+      </div>
+    </div>
 
+    <div class="header__menu-right my-navbar">
 
+      <div class="my-dropdown d-none">
+        <button class="drop-btn me-5">Ще...  <i class="arrow"></i></button>
+        <div class="my-dropdown-content">
+          <a href="#">Доставка</a>
+          <a href="#">Оплата</a>
+          <a href="#">Гарантія</a>
+          <a href="#">Новини</a>
+          <a href="#">Журнал</a>
+          <a href="#">Про магазин</a>
+          <a href="#">Контакти</a>
+        </div>
+      </div>
+      <div class="my-navbar">
+        <a href="#">Доставка</a>
+        <a href="#">Оплата</a>
+        <a href="#">Гарантія</a>
+        <a href="#">Новини</a>
+        <a href="#">Журнал</a>
+        <a href="#">Про магазин</a>
+        <a href="#">Контакти</a>
+      </div>
 
+    </div>
+  </div>
 
+  <div id="header__information" class="container mx-auto d-flex justify-content-between align-items-center">
+    <div class="header__logo d-flex align-items-center">
+      <img src="image/Logo.png" alt="logo">
+      <div class="header__logo-name">
+        <div class="header__logo-name-item"><h1>AVT-ZAP</h1></div>
+        <div class="header__logo-name-item"><h4>Інтернет-магазин запчастин для АКПП</h4></div>
+      </div>
+    </div>
+    <div class="header__clock-geolocation d-flex flex-wrap">
+      <div class="header__clock d-flex align-items-center gap-2">
+        <img src="image/Clock.png" alt="clock">
+        <div class="header__clock-name"><h3>Ми працюємо:</h3></div>
+        <div class="header__clock-time d-flex align-items-end flex-column">
+          <div class="header__clock-name-item"><h3>будні - 9:00-21:00</h3></div>
+          <div class="header__clock-name-item"><h3>сб. - 10:00-15:00</h3></div>
+        </div>
+      </div>
+      <div class="header__geolocation d-flex align-items-center gap-2">
+        <img src="image/geolocation_big.png" alt="geolocation">
+        <div class="header__geolocation-text text-end"><h3>Проспект нез, буд.45</h3></div>
+      </div>
+    </div>
+    <div class="whats_app-tel d-flex flex-wrap">
+      <button class="whats_app d-flex align-items-center px-3">
+        <img src="image/whatsapp.png" alt="whatsapp" class="pe-2">
+        Напишіть нам в WhatsApp
+      </button>
+      <div class="header__tel d-flex align-items-end flex-column">
+        <div class="header__tel-item"><h2>+38 050 123 45 67</h2></div>
+        <a href="#" class="text-center"><h4>Форма зворотнього звязку</h4></a>
+      </div>
+    </div>
 
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -26,3 +111,4 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+

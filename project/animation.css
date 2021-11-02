@@ -1,0 +1,15 @@
+.header__logo img {
+    display: inline-block;
+    background: transparent;
+    position: relative;
+}
+
+.header__logo img{
+    animation: rotate 5s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+    100% {transform: rotateY(360deg);}
+}
+

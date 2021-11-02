@@ -1,0 +1,112 @@
+@media screen and (min-width: 1400px) {
+    .header__clock-geolocation,
+    .whats_app-tel {
+        column-gap: 75px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .header__clock-geolocation,
+    .whats_app-tel {
+        column-gap: 25px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+
+
+    .header__logo {
+        max-width: 200px;
+    }
+
+    .header__clock-geolocation,
+    .whats_app-tel {
+        column-gap: 15px;
+        row-gap: 5px;
+        max-width: 260px;
+    }
+
+    .header__clock-geolocation {
+        justify-content: flex-start;
+    }
+
+    .whats_app-tel {
+        justify-content: center;
+        align-items: end;
+        max-width: 200px;
+        flex-direction: column-reverse;
+    }
+
+    .header__geolocation {
+        max-width: 185px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .header__menu-right .my-dropdown {
+        display: block !important;
+    }
+    .header__menu-right .my-navbar{
+        display: none;
+    }
+
+    .container {
+        /*max-width: 750px;*/
+    }
+
+    .header__menu-left ul {
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    h3 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    h4 {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .header__logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .header__clock img,
+    .header__geolocation img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .burger-dropdown-menu {
+        position: absolute;
+        z-index: 1000;
+        display: block;
+        /*transform: translate(7px, 36px);*/
+        min-width: 10rem;
+        padding: .5rem 0;
+        margin: 0;
+        font-size: 1rem;
+        color: #212529;
+        text-align: left;
+        list-style: none;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, .15);
+        border-radius: .25rem;
+    }
+}
