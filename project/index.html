@@ -16,6 +16,7 @@
 </head>
 <body>
 <div id="header">
+  <div class="header__bg"></div>
   <div id="header__menu" class="container d-flex justify-content-between">
     <div class="header__menu-left my-navbar">
       <div class="d-flex align-items-center gap-1 ">
@@ -43,8 +44,8 @@
     <div class="header__menu-right my-navbar">
 
       <div class="my-dropdown d-none">
-        <button class="drop-btn me-5">Ще...  <i class="arrow"></i></button>
-        <div class="my-dropdown-content">
+        <button class="drop-btn">Ще... <i class="arrow"></i></button>
+        <div class="my-dropdown-content translate">
           <a href="#">Доставка</a>
           <a href="#">Оплата</a>
           <a href="#">Гарантія</a>
@@ -67,26 +68,26 @@
     </div>
   </div>
 
-  <div id="header__information" class="container mx-auto d-flex justify-content-between align-items-center">
+  <div id="header__information" class="container d-flex justify-content-between align-items-center">
     <div class="header__logo d-flex align-items-center">
       <img src="image/Logo.png" alt="logo">
       <div class="header__logo-name">
         <div class="header__logo-name-item"><h1>AVT-ZAP</h1></div>
-        <div class="header__logo-name-item"><h4>Інтернет-магазин запчастин для АКПП</h4></div>
+        <div class="header__logo-name-item"><h5>Інтернет-магазин запчастин для АКПП</h5></div>
       </div>
     </div>
     <div class="header__clock-geolocation d-flex flex-wrap">
       <div class="header__clock d-flex align-items-center gap-2">
         <img src="image/Clock.png" alt="clock">
-        <div class="header__clock-name"><h3>Ми працюємо:</h3></div>
+        <div class="header__clock-name"><h4>Ми працюємо:</h4></div>
         <div class="header__clock-time d-flex align-items-end flex-column">
-          <div class="header__clock-name-item"><h3>будні - 9:00-21:00</h3></div>
-          <div class="header__clock-name-item"><h3>сб. - 10:00-15:00</h3></div>
+          <div class="header__clock-name-item"><h4>будні - 9:00-21:00</h4></div>
+          <div class="header__clock-name-item"><h4>сб. - 10:00-15:00</h4></div>
         </div>
       </div>
       <div class="header__geolocation d-flex align-items-center gap-2">
         <img src="image/geolocation_big.png" alt="geolocation">
-        <div class="header__geolocation-text text-end"><h3>Проспект нез, буд.45</h3></div>
+        <div class="header__geolocation-text text-end"><h4>Проспект нез, буд.45</h4></div>
       </div>
     </div>
     <div class="whats_app-tel d-flex flex-wrap">
@@ -96,11 +97,299 @@
       </button>
       <div class="header__tel d-flex align-items-end flex-column">
         <div class="header__tel-item"><h2>+38 050 123 45 67</h2></div>
-        <a href="#" class="text-center"><h4>Форма зворотнього звязку</h4></a>
+        <a href="#" class="text-center"><h5>Форма зворотнього звязку</h5></a>
       </div>
     </div>
 
   </div>
+
+  <div class="header__find container d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center gap-2 gap-lg-4">
+      <div class="header__find-catalog">
+        <button>
+          <svg width="20" height="13" viewBox="0 0 20 13" fill="none">
+            <rect width="20" height="3" fill="white"/>
+            <rect y="5" width="20" height="3" fill="white"/>
+            <rect y="10" width="20" height="3" fill="white"/>
+          </svg>
+          <text>Каталог</text>
+        </button>
+      </div>
+      <div class="header__find-input">
+        <label>
+          <input type="text" placeholder="Пошук по найменуванню або артиклю">
+        </label>
+        <button>Знайти</button>
+      </div>
+    </div>
+    <div class="header__find-login">
+      <a href="#">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M13.8005 13.4877C15.6534 13.4877 17.2577 12.8232 18.569 11.5119C19.8798 10.2009 20.5446 8.59683 20.5446 6.74365C20.5446 4.89111 19.88 3.2868 18.5688 1.97537C17.2575 0.664581 15.6532 0 13.8005 0C11.9473 0 10.3432 0.664581 9.0322 1.97559C7.72119 3.28659 7.0564 4.8909 7.0564 6.74365C7.0564 8.59683 7.72119 10.2011 9.0322 11.5121C10.3436 12.8229 11.9479 13.4877 13.8005 13.4877ZM10.1926 3.13577C11.1985 2.12982 12.3786 1.64084 13.8005 1.64084C15.2221 1.64084 16.4024 2.12982 17.4086 3.13577C18.4145 4.14194 18.9037 5.3222 18.9037 6.74365C18.9037 8.16553 18.4145 9.34558 17.4086 10.3517C16.4024 11.3579 15.2221 11.8469 13.8005 11.8469C12.379 11.8469 11.199 11.3577 10.1926 10.3517C9.18643 9.34579 8.69723 8.16553 8.69723 6.74365C8.69723 5.3222 9.18643 4.14194 10.1926 3.13577Z"
+                fill="#0F2438"/>
+          <path d="M25.6008 21.5307C25.563 20.9851 25.4865 20.3899 25.3739 19.7614C25.2603 19.1283 25.114 18.5297 24.9388 17.9826C24.7576 17.4171 24.5117 16.8587 24.2073 16.3236C23.8918 15.7682 23.521 15.2845 23.1048 14.8866C22.6697 14.4702 22.1369 14.1355 21.5208 13.8913C20.9069 13.6484 20.2265 13.5254 19.4987 13.5254C19.2128 13.5254 18.9364 13.6426 18.4026 13.9902C18.074 14.2045 17.6897 14.4523 17.2607 14.7263C16.894 14.9601 16.3971 15.179 15.7833 15.3773C15.1845 15.571 14.5766 15.6693 13.9763 15.6693C13.3764 15.6693 12.7685 15.571 12.1693 15.3773C11.5562 15.1792 11.0591 14.9603 10.6929 14.7266C10.268 14.455 9.88348 14.2072 9.55002 13.99C9.0166 13.6424 8.74017 13.5251 8.45435 13.5251C7.72632 13.5251 7.04614 13.6484 6.4324 13.8915C5.81674 14.1353 5.28375 14.47 4.84818 14.8868C4.43204 15.285 4.06119 15.7684 3.74588 16.3236C3.44189 16.8587 3.1958 17.4169 3.01465 17.9828C2.83969 18.5299 2.69336 19.1283 2.57971 19.7614C2.46692 20.3891 2.39066 20.9844 2.35284 21.5313C2.31567 22.066 2.29688 22.6225 2.29688 23.1848C2.29688 24.6464 2.76151 25.8296 3.67773 26.7023C4.58264 27.5634 5.77979 28 7.23605 28H20.7182C22.1741 28 23.3712 27.5634 24.2763 26.7023C25.1928 25.8303 25.6574 24.6466 25.6574 23.1845C25.6572 22.6204 25.6382 22.0639 25.6008 21.5307ZM23.145 25.5135C22.5471 26.0826 21.7532 26.3592 20.718 26.3592H7.23605C6.20062 26.3592 5.4068 26.0826 4.80908 25.5137C4.22269 24.9555 3.93771 24.1935 3.93771 23.1848C3.93771 22.6601 3.95502 22.1421 3.98962 21.6447C4.02338 21.1568 4.09238 20.6209 4.1947 20.0513C4.29575 19.4889 4.42435 18.961 4.5773 18.4831C4.72406 18.0249 4.92422 17.5712 5.17245 17.1341C5.40936 16.7175 5.68195 16.3601 5.98273 16.0722C6.26407 15.8028 6.61868 15.5823 7.03653 15.417C7.42297 15.264 7.85727 15.1803 8.32874 15.1677C8.3862 15.1982 8.48853 15.2566 8.6543 15.3647C8.99161 15.5845 9.3804 15.8353 9.81021 16.1098C10.2947 16.4187 10.9189 16.6977 11.6647 16.9384C12.4271 17.1849 13.2047 17.3101 13.9765 17.3101C14.7483 17.3101 15.5261 17.1849 16.2881 16.9386C17.0345 16.6974 17.6585 16.4187 18.1436 16.1093C18.5835 15.8282 18.9614 15.5847 19.2987 15.3647C19.4645 15.2568 19.5668 15.1982 19.6243 15.1677C20.0959 15.1803 20.5302 15.264 20.9169 15.417C21.3345 15.5823 21.6891 15.803 21.9705 16.0722C22.2713 16.3599 22.5439 16.7173 22.7808 17.1343C23.0292 17.5712 23.2296 18.0251 23.3761 18.4829C23.5293 18.9614 23.6581 19.4891 23.7589 20.0511C23.8611 20.6217 23.9303 21.1579 23.964 21.645V21.6454C23.9988 22.1408 24.0164 22.6586 24.0166 23.1848C24.0164 24.1937 23.7314 24.9555 23.145 25.5135Z"
+                fill="#0F2438"/>
+        </svg>
+        Увійти</a>
+    </div>
+    <div class="header__find-favourite">
+      <a href="#">
+        <svg width="28" height="26" viewBox="0 0 28 26" fill="none">
+          <path d="M14 25.4422C13.6014 25.4422 13.217 25.2978 12.9175 25.0355C11.7864 24.0464 10.6959 23.1169 9.73372 22.297L9.7288 22.2928C6.90792 19.8889 4.47198 17.8129 2.77709 15.7679C0.882475 13.4817 0 11.3141 0 8.94606C0 6.64534 0.788908 4.52279 2.22125 2.96911C3.67068 1.39706 5.6595 0.53125 7.82201 0.53125C9.43828 0.53125 10.9185 1.04224 12.2214 2.04989C12.8789 2.55853 13.4749 3.18103 14 3.90713C14.5253 3.18103 15.1211 2.55853 15.7788 2.04989C17.0817 1.04224 18.5619 0.53125 20.1782 0.53125C22.3404 0.53125 24.3295 1.39706 25.7789 2.96911C27.2113 4.52279 27.9999 6.64534 27.9999 8.94606C27.9999 11.3141 27.1177 13.4817 25.2231 15.7677C23.5282 17.8129 21.0925 19.8887 18.272 22.2923C17.3081 23.1135 16.2159 24.0445 15.0822 25.0359C14.7829 25.2978 14.3984 25.4422 14 25.4422ZM7.82201 2.17144C6.12307 2.17144 4.56234 2.84948 3.42693 4.0808C2.27465 5.33071 1.63998 7.05849 1.63998 8.94606C1.63998 10.9377 2.38018 12.7188 4.03982 14.7213C5.64391 16.657 8.02986 18.6902 10.7924 21.0446L10.7976 21.0488C11.7633 21.8719 12.8582 22.805 13.9976 23.8014C15.1439 22.8031 16.2404 21.8685 17.2082 21.0441C19.9705 18.6898 22.3563 16.657 23.9603 14.7213C25.6198 12.7188 26.36 10.9377 26.36 8.94606C26.36 7.05849 25.7253 5.33071 24.573 4.0808C23.4378 2.84948 21.8769 2.17144 20.1782 2.17144C18.9336 2.17144 17.7909 2.56707 16.782 3.34722C15.8828 4.04278 15.2565 4.92205 14.8893 5.53728C14.7004 5.85366 14.368 6.0425 14 6.0425C13.6319 6.0425 13.2995 5.85366 13.1107 5.53728C12.7437 4.92205 12.1173 4.04278 11.218 3.34722C10.209 2.56707 9.06636 2.17144 7.82201 2.17144Z"
+                fill="#0F2438"/>
+        </svg>
+        Вибране</a>
+    </div>
+    <div class="header__find-cart">
+      <a href="#">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M10.6415 20.9294C8.69207 20.9294 7.10614 22.5154 7.10614 24.4648C7.10614 26.4141 8.69207 28.0001 10.6415 28.0001C12.5908 28.0001 14.1768 26.4141 14.1768 24.4648C14.1768 22.5154 12.5908 20.9294 10.6415 20.9294ZM10.6415 25.8789C9.86156 25.8789 9.22735 25.2446 9.22735 24.4648C9.22735 23.6849 9.86156 23.0507 10.6415 23.0507C11.421 23.0507 12.0556 23.6849 12.0556 24.4648C12.0556 25.2446 11.4214 25.8789 10.6415 25.8789Z"
+                fill="black" stroke="white" stroke-width="0.3"/>
+          <path d="M21.1062 20.9294C19.1568 20.9294 17.5709 22.5154 17.5709 24.4648C17.5709 26.4141 19.1568 28.0001 21.1062 28.0001C23.0556 28.0001 24.6415 26.4141 24.6415 24.4648C24.6415 22.5154 23.0556 20.9294 21.1062 20.9294ZM21.1062 25.8789C20.3263 25.8789 19.6921 25.2446 19.6921 24.4648C19.6921 23.6849 20.3263 23.0507 21.1062 23.0507C21.8861 23.0507 22.5203 23.6849 22.5203 24.4648C22.5203 25.2446 21.8861 25.8789 21.1062 25.8789Z"
+                fill="black" stroke="white" stroke-width="0.3"/>
+          <path d="M27.2391 6.90559C27.0376 6.65245 26.7322 6.50506 26.409 6.50506H7.83814L6.87405 1.6327C6.78956 1.20597 6.45302 0.874023 6.02487 0.795547L1.7825 0.0177841C1.20522 -0.0886374 0.653703 0.293572 0.547992 0.869812C0.442282 1.44605 0.823726 1.99861 1.40002 2.10432L4.9332 2.75198L8.04567 18.4837C8.14395 18.9804 8.57986 19.3385 9.0861 19.3385H23.9344C24.4282 19.3385 24.8564 18.9981 24.9677 18.5162L27.4424 7.80427C27.5152 7.48927 27.4403 7.15836 27.2391 6.90559ZM23.0908 17.2174H9.95716L8.25775 8.6266H25.0751L23.0908 17.2174Z"
+                fill="black" stroke="white" stroke-width="0.3"/>
+        </svg>
+        Корзина пуста</a>
+    </div>
+  </div>
+</div>
+
+<div class="carousel-data container d-flex gap-3 align-items-center">
+
+  <div id="carouselWithIndicators" class="carousel slide me-2" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/carousel/fon.png" class="d-block " alt="Slide 1">
+        <img src="image/carousel/replacement_part.png" class="d-block carousel_foto" alt="replacement_part">
+        <img src="image/carousel/price.png" class="d-block carousel_price" alt="price">
+      </div>
+      <div class="carousel-item">
+        <img src="image/carousel/fon.png" class="d-block" alt="Slide 2">
+        <img src="image/carousel/reclama.png" class="d-block carousel_foto" style="right: 30%" alt="price">
+      </div>
+      <div class="carousel-item">
+        <img src="image/carousel/fon.png" class="d-block" alt="Slide 3">
+        <img src="image/carousel/replacement_part_2.png" class="d-block carousel_foto" alt="replacement_part">
+        <img src="image/carousel/price.png" class="d-block carousel_price" alt="price">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <div class="sale">
+
+    <div class="sale__item">
+      <div class="sale__title"><h3>Акція</h3></div>
+      <div class="sale__data d-flex">
+        <img src="image/sale/sleeve.png" alt="sleeve">
+        <div class="sale__data-text">
+          <h3>Обгінна муфта гідротрансформатор</h3>
+          <h4 style="font-weight: normal">BW-SP-2 SONNAX</h4>
+          <div class="sale__data-text-price">
+            <div class="sale__data-text-price-item">
+              <h2>2 449₴</h2>
+              <h3>2 999₴</h3>
+            </div>
+            <button>
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                <path d="M6.46089 12.7073C5.27734 12.7073 4.31445 13.6702 4.31445 14.8537C4.31445 16.0373 5.27734 17.0002 6.46089 17.0002C7.64445 17.0002 8.60733 16.0373 8.60733 14.8537C8.60733 13.6702 7.64441 12.7073 6.46089 12.7073ZM6.46089 15.7123C5.98739 15.7123 5.60233 15.3272 5.60233 14.8537C5.60233 14.3802 5.98739 13.9952 6.46089 13.9952C6.93417 13.9952 7.31946 14.3802 7.31946 14.8537C7.31946 15.3272 6.9344 15.7123 6.46089 15.7123Z"
+                      fill="white"/>
+                <path d="M12.8145 12.7073C11.631 12.7073 10.6681 13.6702 10.6681 14.8537C10.6681 16.0373 11.631 17.0002 12.8145 17.0002C13.9981 17.0002 14.961 16.0373 14.961 14.8537C14.961 13.6702 13.9981 12.7073 12.8145 12.7073ZM12.8145 15.7123C12.341 15.7123 11.956 15.3272 11.956 14.8537C11.956 14.3802 12.341 13.9952 12.8145 13.9952C13.288 13.9952 13.6731 14.3802 13.6731 14.8537C13.6731 15.3272 13.288 15.7123 12.8145 15.7123Z"
+                      fill="white"/>
+                <path d="M16.538 4.19268C16.4157 4.03898 16.2302 3.9495 16.034 3.9495H4.75886L4.17353 0.991282C4.12223 0.732199 3.9179 0.530657 3.65795 0.48301L1.08223 0.0107975C0.731739 -0.0538156 0.396887 0.17824 0.332705 0.5281C0.268524 0.87796 0.500115 1.21344 0.850008 1.27762L2.99515 1.67085L4.88487 11.2223C4.94453 11.5238 5.2092 11.7412 5.51656 11.7412H14.5316C14.8314 11.7412 15.0914 11.5346 15.159 11.242L16.6615 4.73831C16.7057 4.54706 16.6602 4.34615 16.538 4.19268ZM14.0194 10.4534H6.04541L5.01363 5.23758H15.2242L14.0194 10.4534Z"
+                      fill="white"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sale__item">
+      <div class="sale__title"><h3>Акція</h3></div>
+      <div class="sale__data d-flex">
+        <img src="image/sale/fraction_disk.png" alt="sleeve">
+        <div class="sale__data-text">
+          <h3 style="width: 100%">Комплект фрикційних дисків (оригінал)</h3>
+          <h4 style="font-weight: normal">BW-SP-2 SONNAX</h4>
+          <div class="sale__data-text-price">
+            <div class="sale__data-text-price-item">
+              <h2>1 999₴</h2>
+              <h3>2 349₴</h3>
+            </div>
+            <button>
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                <path d="M6.46089 12.7073C5.27734 12.7073 4.31445 13.6702 4.31445 14.8537C4.31445 16.0373 5.27734 17.0002 6.46089 17.0002C7.64445 17.0002 8.60733 16.0373 8.60733 14.8537C8.60733 13.6702 7.64441 12.7073 6.46089 12.7073ZM6.46089 15.7123C5.98739 15.7123 5.60233 15.3272 5.60233 14.8537C5.60233 14.3802 5.98739 13.9952 6.46089 13.9952C6.93417 13.9952 7.31946 14.3802 7.31946 14.8537C7.31946 15.3272 6.9344 15.7123 6.46089 15.7123Z"
+                      fill="white"/>
+                <path d="M12.8145 12.7073C11.631 12.7073 10.6681 13.6702 10.6681 14.8537C10.6681 16.0373 11.631 17.0002 12.8145 17.0002C13.9981 17.0002 14.961 16.0373 14.961 14.8537C14.961 13.6702 13.9981 12.7073 12.8145 12.7073ZM12.8145 15.7123C12.341 15.7123 11.956 15.3272 11.956 14.8537C11.956 14.3802 12.341 13.9952 12.8145 13.9952C13.288 13.9952 13.6731 14.3802 13.6731 14.8537C13.6731 15.3272 13.288 15.7123 12.8145 15.7123Z"
+                      fill="white"/>
+                <path d="M16.538 4.19268C16.4157 4.03898 16.2302 3.9495 16.034 3.9495H4.75886L4.17353 0.991282C4.12223 0.732199 3.9179 0.530657 3.65795 0.48301L1.08223 0.0107975C0.731739 -0.0538156 0.396887 0.17824 0.332705 0.5281C0.268524 0.87796 0.500115 1.21344 0.850008 1.27762L2.99515 1.67085L4.88487 11.2223C4.94453 11.5238 5.2092 11.7412 5.51656 11.7412H14.5316C14.8314 11.7412 15.0914 11.5346 15.159 11.242L16.6615 4.73831C16.7057 4.54706 16.6602 4.34615 16.538 4.19268ZM14.0194 10.4534H6.04541L5.01363 5.23758H15.2242L14.0194 10.4534Z"
+                      fill="white"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="carousel-items container">
+  <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel__items">
+          <div class="item__data">
+            <div class="item__data-text">
+              <h2>Фільтри</h2>
+              <h4>Масляний фільтр, фільтр повітряний</h4>
+              <button>
+                Перейти
+              </button>
+            </div>
+            <div class="item__data-foto">
+              <img src="image/items/filter.png" alt="radiator">
+            </div>
+          </div>
+          <div class="item__data">
+            <div class="item__data-text">
+              <h2>Масла</h2>
+              <h4>Трансмісійне масло, присадки в масло</h4>
+              <button>
+                Перейти
+              </button>
+            </div>
+            <div class="item__data-foto">
+              <img src="image/items/oil.png" alt="radiator">
+            </div>
+          </div>
+          <div class="item__data">
+            <div class="item__data-text">
+              <h2>Радіатори</h2>
+              <h4>Додаткові радіатори</h4>
+              <button>
+                Перейти
+              </button>
+            </div>
+            <div class="item__data-foto">
+              <img src="image/items/radiator.png" alt="radiator">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel__items">
+          <div class="item__data">
+            <div class="item__data-text">
+              <h2>Радіатори</h2>
+              <h4>Додаткові радіатори</h4>
+              <button>
+                Перейти
+              </button>
+            </div>
+            <div class="item__data-foto">
+              <img src="image/items/radiator.png" alt="radiator">
+            </div>
+          </div>
+          <div class="item__data">
+            <div class="item__data-text">
+              <h2>Фільтри</h2>
+              <h4>Масляний фільтр, фільтр повітряний</h4>
+              <button>
+                Перейти
+              </button>
+            </div>
+            <div class="item__data-foto">
+              <img src="image/items/filter.png" alt="radiator">
+            </div>
+          </div>
+          <div class="item__data">
+            <div class="item__data-text">
+              <h2>Масла</h2>
+              <h4>Трансмісійне масло, присадки в масло</h4>
+              <button>
+                Перейти
+              </button>
+            </div>
+            <div class="item__data-foto">
+              <img src="image/items/oil.png" alt="radiator">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel__items">
+          <div class="item__data">
+            <div class="item__data-text">
+              <h2>Масла</h2>
+              <h4>Трансмісійне масло, присадки в масло</h4>
+              <button>
+                Перейти
+              </button>
+            </div>
+            <div class="item__data-foto">
+              <img src="image/items/oil.png" alt="radiator">
+            </div>
+          </div>
+          <div class="item__data">
+            <div class="item__data-text">
+              <h2>Радіатори</h2>
+              <h4>Додаткові радіатори</h4>
+              <button>
+                Перейти
+              </button>
+            </div>
+            <div class="item__data-foto">
+              <img src="image/items/radiator.png" alt="radiator">
+            </div>
+          </div>
+          <div class="item__data">
+            <div class="item__data-text">
+              <h2>Фільтри</h2>
+              <h4>Масляний фільтр, фільтр повітряний</h4>
+              <button>
+                Перейти
+              </button>
+            </div>
+            <div class="item__data-foto">
+              <img src="image/items/filter.png" alt="radiator">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="popular-button container">
+  <button>Підбірка товарів</button>
+  <button>Акції</button>
+  <button>Зараз купляють</button>
+</div>
+<div class="items container">
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

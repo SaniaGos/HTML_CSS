@@ -10,11 +10,30 @@
     .whats_app-tel {
         column-gap: 25px;
     }
+
+    .header__find-input input {
+        width: 400px;
+    }
+
+    .carousel-items .carousel-item img {
+        height: 180px;
+    }
 }
 
 @media screen and (max-width: 1199px) {
 
+    .header__find-login a,
+    .header__find-favourite a,
+    .header__find-cart a {
+        flex-direction: column;
+        row-gap: 5px;
+    }
 
+    .my-navbar a,
+    .my-navbar button,
+    .my-navbar p {
+        font-size: 13px;
+    }
 
     .header__logo {
         max-width: 200px;
@@ -41,14 +60,58 @@
     .header__geolocation {
         max-width: 185px;
     }
+
+    .carousel_foto {
+        top: 20%;
+    }
+
+    .carousel_price {
+        top: 30%;
+        left: 12%;
+    }
+
+    .carousel-items .carousel-item img {
+        height: 140px;
+    }
 }
 
 @media screen and (max-width: 991px) {
 
+    .header__find-catalog button,
+    .header__find-input input,
+    .header__find-input button {
+        height: 43px;
+    }
+
+    .header__find a {
+        font-size: 13px;
+    }
+
+    .header__find-login svg,
+    .header__find-favourite svg,
+    .header__find-cart svg {
+        height: 21px;
+    }
+
+    .header__find-catalog button,
+    .header__find-input button {
+        padding: 0 15px;
+    }
+
+    .header__find button text {
+        display: none;
+    }
+
+    .header__find-input input {
+        width: 290px;
+        font-size: 13px;
+    }
+
     .header__menu-right .my-dropdown {
         display: block !important;
     }
-    .header__menu-right .my-navbar{
+
+    .header__menu-right .my-navbar {
         display: none;
     }
 
@@ -72,11 +135,17 @@
     }
 
     h3 {
-        font-size: 12px;
-        line-height: 16px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 23px;
     }
 
     h4 {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    h5 {
         font-size: 11px;
         line-height: 14px;
     }
@@ -108,5 +177,53 @@
         background-clip: padding-box;
         border: 1px solid rgba(0, 0, 0, .15);
         border-radius: .25rem;
+    }
+
+    .sale__data-text-price button {
+        padding: 10px 11px;
+    }
+
+    .sale__data img {
+        width: 70px;
+        margin-right: 8px;
+    }
+
+    .carousel-item img:nth-child(1) {
+        height: 350px;
+    }
+
+    .carousel_foto {
+        top: 25%;
+    }
+
+    .carousel_price {
+        top: 35%;
+        left: 12%;
+    }
+
+    .item__data h2 {
+        font-size: 16px;
+    }
+
+    .carousel-items .carousel__items .item__data:nth-child(3) {
+        display: none;
+    }
+
+    .carousel-items .carousel__items .item__data {
+        width: 48%;
+    }
+
+    .item__data button {
+        font-size: 13px;
+        padding: 4px 0;
+        width: 75px;
+    }
+
+    .carousel-items .carousel-item img {
+        height: 160px;
+    }
+
+    .popular-button button {
+        font-size: 16px;
     }
 }
