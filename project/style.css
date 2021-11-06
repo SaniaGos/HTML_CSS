@@ -32,7 +32,7 @@
     background-color: var(--dark);
     height: 36px;
     z-index: -1;
-    width: 100vw;
+    width: 100%;
 }
 
 #header__menu nav {
@@ -250,7 +250,7 @@ button.whats_app {
     justify-content: center;
 }
 
-.header__find-catalog button text {
+.header__find-mini text {
     color: white;
     font-size: 18px;
     font-weight: bold
@@ -267,10 +267,19 @@ button.whats_app {
     color: var(--orange);
 }
 
-.header__find-login:hover svg path,
-.header__find-favourite:hover svg path,
-.header__find-cart:hover svg path,
-.header__find button:hover svg rect {
+.header__find button path {
+    fill: #FFFFFF;
+}
+
+.header__find-input button svg {
+    display: none;
+}
+
+.header__find-login:hover path,
+.header__find-favourite:hover path,
+.header__find-cart:hover path,
+.header__find button:hover rect,
+.header__find button:hover path {
     fill: var(--orange)
 }
 
@@ -290,7 +299,6 @@ button.whats_app {
     border-radius: 0 6px 6px 0;
     border: 1px solid var(--blue);
     background-color: var(--blue);
-    color: #FFFFFF;
 }
 
 svg path {
@@ -526,8 +534,9 @@ svg path {
     background-color: var(--blue);
     color: white;
 }
-.items{
-    margin-top: 25px;
+
+.items {
+    margin: 25px auto;
     display: flex;
     flex-wrap: wrap;
     column-gap: 2%;
@@ -545,6 +554,7 @@ svg path {
     border-radius: 6px;
     border: 1px solid transparent;
 }
+
 .item:hover {
     border: 1px solid var(--grey);
 
@@ -556,9 +566,12 @@ svg path {
     margin: 0 auto;
     border-radius: 2px;
     border: 1px solid var(--blue);
+    text-align: center;
+    height: 55%;
 }
-.item__foto img{
-    width: 100%;
+
+.item__foto img {
+    max-width: 94%;
 }
 
 .item__foto-sale {
@@ -580,47 +593,56 @@ svg path {
     color: var(--grey);
     margin-left: 5px;
 }
-.item__name{
+
+.item__name {
     font-weight: 500;
     font-size: 20px;
     line-height: 25px;
     height: 50px;
 }
+
 .item__price,
-.item__price-request{
+.item__price-request {
     display: flex;
     column-gap: 10px;
     align-items: end;
+    min-height: 26px;
 }
-.item__price h2{
+
+.item__price h2 {
     font-weight: bold;
     font-size: 22px;
     line-height: 26px;
     color: var(--orange);
 }
+
 .item__price h3 {
     font-size: 16px;
     line-height: 19px;
     text-decoration-line: line-through;
     color: var(--grey);
 }
-.item__price-request h3{
+
+.item__price-request h3 {
     font-weight: normal;
     font-size: 13px;
     line-height: 15px;
 }
-.item__price-request a{
+
+.item__price-request a {
     font-size: 13px;
     line-height: 15px;
     text-decoration-line: underline;
     color: var(--blue);
 }
-.item__buttons{
+
+.item__buttons {
     display: flex;
     align-items: center;
     column-gap: 15px;
 }
-.item__button-cart{
+
+.item__button-cart {
     color: #FFFFFF;
     background-color: var(--blue);
     border: 0;
@@ -632,23 +654,214 @@ svg path {
     display: flex;
     column-gap: 10px;
 }
-.item__button-cart path{
+
+.item__button-cart path {
     fill: white;
     stroke: white;
 }
-.item__buttons a path{
+
+.item__buttons a path {
     fill: var(--blue);
     stroke: var(--blue);
 }
+
 .item__button-cart:hover,
-.item__button-cart:hover path{
+.item__button-cart:hover path {
     color: var(--orange);
     fill: var(--orange);
     stroke: var(--orange);
 }
-.item__buttons a:hover path{
+
+.item__buttons a:hover path {
     fill: var(--orange);
     stroke: var(--orange);
 }
 
+/*Включаєм знижку і ціну для вибраних товарів*/
+.items .item:nth-child(3n-2) .item__foto-sale,
+.items .item:nth-child(3n-2) .item__price {
+    display: flex !important;
+}
 
+.items .item:nth-child(3n-2) .item__price-request {
+    display: none;
+}
+
+
+/*-------------------*/
+.news__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    width: 24%;
+    margin: 15px 0;
+}
+
+.news h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 45px 0 10px 0;
+}
+
+.news-item-date {
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--dark);
+    margin: 30px 0 15px 0;
+    padding: 3px 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.news-item-date:before,
+.news-item-date:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: var(--dark);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.news-item-date:before {
+    height: 25px;
+    width: 1px;
+    top: -20px;
+
+}
+
+.news-item-date:after {
+    height: 9px;
+    width: 9px;
+    top: -29px;
+    border-radius: 50%;
+}
+
+.news-item-date h3 {
+    color: #FFFFFF;
+}
+
+.news-item-name {
+    margin-bottom: 15px;
+}
+
+#footer {
+    width: 100%;
+    background-color: var(--dark);
+}
+
+.footer-container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.footer-container h2 {
+    color: var(--grey);
+    text-transform: uppercase;
+}
+
+.footer-container a,
+.footer-container h3 {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-container a:hover {
+    color: var(--orange);
+}
+
+.footer-catalog {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 250px;
+}
+
+.footer-catalog img {
+    width: fit-content;
+}
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    column-gap: 20px;
+    max-width: 43%;
+}
+.contact-address{
+    display: flex;
+    justify-content: space-between;
+    /*flex-grow: 1;*/
+}
+.contact-item h2{
+    margin-bottom: 15px;
+}
+.contact-item h3{
+    line-height: normal;
+}
+.feedback-subscribe,
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+.feedback{
+    display: flex;
+    column-gap: 30px;
+}
+.feedback h2,
+.subscribe h2{
+    text-transform: none;
+}
+.feedback h2:nth-child(2){
+    color: #FFFFFF;
+
+}
+
+.subscribe-input {
+    height: 40px;
+    display: flex;
+}
+.subscribe-input label{
+    height: 100%;
+    border: 0;
+}
+
+.subscribe-input input{
+    background-color: transparent;
+    padding: 0 15px;
+    height: 100%;
+    border: 1px solid var(--grey);
+    border-right: 0;
+    border-radius: 6px 0 0 6px;
+    min-width: 300px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.subscribe-input input::placeholder{
+    color: var(--grey);
+}
+
+.subscribe-input button {
+    height: 100%;
+    border: 0;
+    padding: 0 35px;
+    background-color: var(--blue);
+    border-radius: 0 6px 6px 0;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.subscribe-input button:hover {
+    color: var(--orange);
+}

@@ -3,6 +3,10 @@
     .whats_app-tel {
         column-gap: 75px;
     }
+
+    .items .item:nth-child(9) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1399px) {
@@ -77,6 +81,16 @@
     .item {
         width: 280px;
     }
+    .footer-contact{
+        width: 100%;
+    }
+    .feedback-subscribe{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .feedback{
+        flex-direction: column;
+    }
 
 }
 
@@ -103,7 +117,7 @@
         padding: 0 15px;
     }
 
-    .header__find button text {
+    .header__find-catalog text {
         display: none;
     }
 
@@ -134,7 +148,8 @@
         line-height: 24px;
     }
 
-    h2 {
+    h2,
+    .news h2{
         font-size: 16px;
         line-height: 19px;
     }
@@ -193,7 +208,7 @@
         margin-right: 8px;
     }
 
-    .carousel-data .carousel-item img:nth-child(1){
+    .carousel-data .carousel-item img:nth-child(1) {
         height: 350px;
     }
 
@@ -251,33 +266,56 @@
 }
 
 @media screen and (max-width: 767px) {
-    .carousel-items .carousel-item img{
+    .carousel-items .carousel-item img {
         height: 130px;
     }
-    .carousel-data{
+
+    .carousel-data {
         flex-direction: column;
     }
-    .sale{
+
+    .sale {
         flex-direction: row;
     }
-    .carousel-data .carousel-item img:nth-child(1){
+
+    .carousel-data .carousel-item img:nth-child(1) {
         height: 300px;
     }
+
     .header__find-login,
     .header__find-favourite,
     .header__find-cart,
     .header__clock-geolocation,
-    .header__menu-left .my-dropdown{
+    .header__menu-left .my-dropdown,
+    .items .item:nth-child(n+5),
+    .header__find-input text,
+    .news-item:nth-child(n+4){
         display: none !important;
     }
-    .header__find-mini{
+    .news-item{
+        width: 32%;
+    }
+    .header__find-input button svg{
+        display: block;
+    }
+
+    .header__find-mini {
         width: 100%;
     }
+
     .header__find-input,
-    .header__find-input input{
+    .header__find-input input {
         width: 100%;
     }
-    .header__find-input label{
+
+    .header__find-input label {
         flex-grow: 1;
+    }
+
+    .header__find-input svg{
+        display: block;
+    }
+    .popular-button button{
+        padding: 10px 20px;
     }
 }
