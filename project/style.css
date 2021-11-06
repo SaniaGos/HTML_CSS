@@ -953,6 +953,9 @@ svg path {
     font-weight: normal;
     color: var(--grey);
 }
+.social-icon svg:hover path{
+    fill:var(--orange)
+}
 
 .footer-fixed {
     display: none;
